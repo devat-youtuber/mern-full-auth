@@ -1,0 +1,31 @@
+.home_page{
+    min-height: calc(100vh - 100px);
+    padding: 20px;
+    background: rgb(255, 249, 215);
+    color: #333;
+}
+.home_page h2{
+    font-size: 2rem;
+    margin: 10px 0;
+    color: teal;
+}
+.home_page p{
+    color: #777;
+    line-height: 1.5;
+    margin: 10px 0;
+    font-style: italic;
+}
+
+.home_page a{
+    color: white;
+    background: crimson;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 3px;
+    margin: 10px 0;
+    letter-spacing: 1.2px;
+}
+.home_page h3{
+    color: chocolate;
+    margin-top: 30px;
+}

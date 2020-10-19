@@ -1,0 +1,164 @@
+.profile_page{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.profile_page .col-left{
+    max-width: 400px;
+    min-width: 300px;
+    padding: 0 10px;
+    margin: auto;
+}
+
+.profile_page .col-left .avatar{
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    position: relative;
+    margin: 15px auto;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.profile_page .col-left img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.profile_page .col-left .avatar span{
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: #fff8;
+    text-align: center;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: rgb(255, 140, 45);
+    transition: 0.3s ease-in-out;
+}
+.profile_page .col-left .avatar:hover span{
+    bottom: -15%;
+}
+.profile_page .col-left #file_up{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.profile_page .col-left h2{
+    text-align: center;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    color: #333;
+    margin: 10px 0;
+}
+.profile_page .col-left label{
+    display: block;
+    margin-top: 5px;
+}
+.profile_page .col-left input{
+    width: 100%;
+    height: 40px;
+    margin: 5px 0;
+    border: none;
+    outline: none;
+    background: #fee;
+    padding: 0 5px;
+}
+.profile_page .col-left button{
+    background: #333;
+    color: white;
+    padding: 10px 25px;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+    margin: 10px 0;
+}
+
+/* ----------- Col Right----------- */
+.profile_page .col-right{
+    padding: 0 10px;
+    flex: 1;
+    min-width: 300px;
+}
+.profile_page .col-right h2{
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    color: #333;
+    margin: 10px 0;
+}
+
+/* ------------ Table------------ */
+.customers{
+    border-collapse: collapse;
+    width: 100%;
+}
+.customers td,
+.customers th{
+    border: 1px solid #ddd;
+    padding: 8px;
+    min-width: 100px;
+}
+.customers tr:nth-child(even){
+    background: #f2f2f2;
+}
+.customers th{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background: #555;
+    color: white;
+}
+.customers i{
+    cursor: pointer;
+}
+.customers .fa-check{
+    color: green;
+}
+.customers .fa-times{
+    color: red;
+}
+.customers .fa-edit{
+    background: whitesmoke;
+    padding: 7px;
+    color: #555;
+    font-size: 10px;
+}
+.customers .fa-trash-alt{
+    background: red;
+    padding: 7px;
+    color: white;
+    font-size: 10px;
+    margin-left: 7px;
+}
+
+
+/* -------------- Edit User ----------------- */
+.edit_user .go_back{
+    background: white;
+    margin: 20px;
+    font-size: 1.2rem;
+}
+.edit_user .col-left{
+    margin-top: 50px;
+}
+.edit_user .col-left input{
+    background: #eee;
+}
+.edit_user .col-left #isAdmin{
+    width: 20px;
+    height: 20px;
+    transform: translateY(3px);
+    margin: 10px 0;
+}
+.edit_user .col-left #isAdmin + label{
+    display: inline-block;
+    margin-left: 5px;
+}
